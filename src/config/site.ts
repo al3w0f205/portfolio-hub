@@ -55,15 +55,15 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Alex Dev",
-  handle: "@alexdev",
+  name: "Miguel Figueroa",
+  handle: "@al3w0f",
   tagline: "Construyendo interfaces de alto rendimiento y arquitectura en la nube",
   role: "Full-Stack Engineer & Cloud Architect",
   shortBio: "Desarrollador enfocado en Next.js, TypeScript, arquitecturas escalables y experiencias web fluidas con micro-interacciones de vanguardia.",
   about: "Especializado en diseñar productos digitales limpios, eficientes y desplegados en infraestructura autónoma con Coolify y Docker. Apasionado por el rendimiento, la accesibilidad y el open source.",
   location: "Remoto / Global",
-  domain: "https://midominio.com",
-  contactEmail: "contacto@midominio.com",
+  domain: "https://al3w0f.tech",
+  contactEmail: "miguel.alejandro.figueroa@gmail.com",
   
   availability: {
     status: "available",
@@ -79,12 +79,12 @@ export const siteConfig: SiteConfig = {
   ],
 
   socials: {
-    github: "https://github.com",
+    github: "https://github.com/al3w0f205",
     linkedin: "https://linkedin.com",
     twitter: "https://x.com",
     discord: "https://discord.com",
     telegram: "https://t.me",
-    email: "contacto@midominio.com",
+    email: "miguel.alejandro.figueroa@gmail.com",
   },
 
   hubLinks: [

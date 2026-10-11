@@ -28,6 +28,7 @@ export interface SkillCategory {
 export interface SiteConfig {
   name: string;
   handle: string;
+  avatarUrl: string;
   tagline: string;
   role: string;
   shortBio: string;
@@ -35,6 +36,7 @@ export interface SiteConfig {
   location: string;
   domain: string;
   contactEmail: string;
+  discordId: string;
   availability: {
     status: 'available' | 'busy' | 'open_to_offers';
     label: string;
@@ -55,135 +57,159 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Miguel Figueroa",
+  name: "Alejandro Figueroa",
   handle: "@al3w0f",
-  tagline: "Construyendo interfaces de alto rendimiento y arquitectura en la nube",
-  role: "Full-Stack Engineer & Cloud Architect",
-  shortBio: "Desarrollador enfocado en Next.js, TypeScript, arquitecturas escalables y experiencias web fluidas con micro-interacciones de vanguardia.",
-  about: "Especializado en diseñar productos digitales limpios, eficientes y desplegados en infraestructura autónoma con Coolify y Docker. Apasionado por el rendimiento, la accesibilidad y el open source.",
-  location: "Remoto / Global",
+  avatarUrl: "https://avatars.githubusercontent.com/u/75915300?v=4",
+  tagline: "Software Engineering Student 🇪🇨 | Python Backend, AI & Cloud Orchestration",
+  role: "Software Engineering Student & Cloud Orchestrator",
+  shortBio: "Estudiante de Ingeniería de Software en Ecuador 🇪🇨. Backend con Python, integraciones de inteligencia artificial y orquestación de servidores propios con Proxmox, Coolify y Docker.",
+  about: "Enfocado en crear aplicaciones web modernas de alto rendimiento con Next.js y Django, explorar modelos de Machine Learning y gestionar infraestructura auto-hospedada segura mediante Cloudflare Tunnels.",
+  location: "Ecuador 🇪🇨 / Remoto",
   domain: "https://al3w0f.tech",
   contactEmail: "miguel.alejandro.figueroa@gmail.com",
-  
+  discordId: "457026491197292546",
+
   availability: {
     status: "available",
-    label: "Disponible para nuevos proyectos",
-    description: "Abierto a consultoría técnica, desarrollo de MVPs y colaboraciones remotas.",
+    label: "Disponible para proyectos & colaboraciones",
+    description: "Abierto a oportunidades de desarrollo backend, integraciones de IA, frontend moderno o proyectos en la nube.",
   },
 
   metrics: [
-    { value: "4+", label: "Años de Experiencia" },
-    { value: "30+", label: "Proyectos Lanzados" },
-    { value: "99.9%", label: "Uptime en Cloud" },
-    { value: "< 1s", label: "Tiempo de Carga" },
+    { value: "Proxmox", label: "Homelab & Virtualización" },
+    { value: "Python + AI", label: "Backend & Modelos" },
+    { value: "Next.js", label: "Frontend & Full-Stack" },
+    { value: "Cloudflare", label: "Zero Trust Tunnels" },
   ],
 
   socials: {
     github: "https://github.com/al3w0f205",
-    linkedin: "https://linkedin.com",
-    twitter: "https://x.com",
-    discord: "https://discord.com",
-    telegram: "https://t.me",
+    linkedin: "https://www.linkedin.com/in/alejandro-figueroa-6248b2340/",
+    discord: "https://discord.com/users/457026491197292546",
     email: "miguel.alejandro.figueroa@gmail.com",
   },
 
   hubLinks: [
     {
-      id: "schedule-call",
-      title: "Agendar una llamada de 15 min",
-      description: "Conversemos sobre tu proyecto o idea técnica sin compromiso",
-      url: "https://cal.com",
-      iconName: "calendar",
-      highlight: true,
-      tag: "Recomendado",
-    },
-    {
-      id: "latest-project",
-      title: "Último despliegue en Coolify",
-      description: "Arquitectura contenerizada con Docker y auto-despliegue continuo",
-      url: "https://github.com",
-      iconName: "sparkles",
-      tag: "En Vivo",
-    },
-    {
-      id: "resume-cv",
-      title: "Descargar CV / Hoja de Vida",
-      description: "Historial profesional, stack tecnológico y certificaciones",
-      url: "#",
-      iconName: "file-text",
-    },
-    {
-      id: "notes-blog",
-      title: "Artículos & Notas de Ingeniería",
-      description: "Guías sobre infraestructura cloud, Docker, Coolify y React",
-      url: "#",
+      id: "linkedin-profile",
+      title: "Conectar en LinkedIn",
+      description: "Perfil profesional, trayectoria académica y red de contactos",
+      url: "https://www.linkedin.com/in/alejandro-figueroa-6248b2340/",
       iconName: "globe",
+      highlight: true,
+      tag: "Perfil Oficial",
+    },
+    {
+      id: "github-profile",
+      title: "Explorar repositorios en GitHub",
+      description: "Código fuente abierto, experimentos de IA y utilidades de sistemas",
+      url: "https://github.com/al3w0f205",
+      iconName: "code",
+      tag: "@al3w0f205",
+    },
+    {
+      id: "inmobiliaria-mvp",
+      title: "Proyecto Inmobiliaria Marketplace MVP",
+      description: "Plataforma inmobiliaria con búsqueda geoespacial y Django REST",
+      url: "https://github.com/al3w0f205/ale-inmobiliaria-mvp",
+      iconName: "sparkles",
+      tag: "Full-Stack",
+    },
+    {
+      id: "discord-direct",
+      title: "Discord Directo (ID: 457026491197292546)",
+      description: "Envíame un mensaje directo o mención en Discord para charlar rápido",
+      url: "https://discord.com/users/457026491197292546",
+      iconName: "message-square",
+      tag: "En Línea",
     },
   ],
 
   skills: [
     {
-      category: "Frontend",
+      category: "Backend & Inteligencia Artificial",
+      items: [
+        { name: "Python" },
+        { name: "Django REST Framework" },
+        { name: "FastAPI" },
+        { name: "Modelos de IA & Inferencia" },
+        { name: "PostgreSQL" },
+        { name: "Redis" },
+      ],
+    },
+    {
+      category: "Frontend & Full-Stack",
       items: [
         { name: "Next.js (App Router)" },
         { name: "React 19" },
         { name: "TypeScript" },
-        { name: "Tailwind CSS" },
-        { name: "Framer Motion" },
+        { name: "Tailwind CSS v4" },
+        { name: "React Bits Animations" },
+        { name: "Motion & UI Design" },
       ],
     },
     {
-      category: "Backend & APIs",
+      category: "Infraestructura & Homelab",
       items: [
-        { name: "Node.js" },
-        { name: "Python / FastAPI" },
-        { name: "PostgreSQL" },
-        { name: "Redis" },
-        { name: "Prisma / Drizzle" },
-      ],
-    },
-    {
-      category: "Cloud & DevOps",
-      items: [
+        { name: "Proxmox VE" },
         { name: "Coolify (Self-hosted PaaS)" },
+        { name: "Cloudflare Zero Trust & Tunnels" },
         { name: "Docker & Compose" },
-        { name: "Linux / VPS" },
-        { name: "Traefik / Nginx" },
-        { name: "GitHub Actions CI/CD" },
+        { name: "Linux Administration" },
+        { name: "C / C++ (Sistemas)" },
       ],
     },
   ],
 
   projects: [
     {
-      id: "project-cloud",
-      title: "CloudOps Dashboard",
-      description: "Panel centralizado para monitorizar servicios auto-hospedados, contenedores Docker y métricas en tiempo real con WebSockets.",
-      tags: ["Next.js", "Docker", "Tailwind CSS", "TypeScript", "Coolify"],
-      repoUrl: "https://github.com",
-      liveUrl: "https://demo.midominio.com",
+      id: "ale-inmobiliaria",
+      title: "Inmobiliaria Marketplace MVP",
+      description: "Plataforma integral de marketplace inmobiliario con filtros avanzados geoespaciales, mensajería directa y pasarela de pago desarrollada con Next.js y Django REST.",
+      tags: ["Next.js", "Django REST", "PostgreSQL", "TypeScript", "Tailwind"],
+      repoUrl: "https://github.com/al3w0f205/ale-inmobiliaria-mvp",
       featured: true,
-      metric: "99.9% SLA",
-      badge: "Destacado",
+      badge: "Full-Stack MVP",
+      metric: "Next.js + Django",
     },
     {
-      id: "project-ai",
-      title: "OmniAI Assistant Gateway",
-      description: "API de inferencia ultrarrápida con streaming de respuestas, rate limiting por token y persistencia en Redis.",
-      tags: ["TypeScript", "FastAPI", "Redis", "Docker"],
-      repoUrl: "https://github.com",
+      id: "ai-enhancer",
+      title: "AI Multimedia Enhancer",
+      description: "Suite de optimización y mejora multimedia aprovechando modelos de inteligencia artificial para procesamiento avanzado en Python.",
+      tags: ["Python", "PyTorch", "AI Models", "FastAPI"],
+      repoUrl: "https://github.com/al3w0f205/AI-Multimedia-Enhancer",
       featured: true,
-      metric: "< 45ms latencia",
+      badge: "AI / ML",
+      metric: "★ Destacado",
     },
     {
-      id: "project-saas",
-      title: "Zenith Portfolio & Bio Hub",
-      description: "Esta misma plantilla de alto impacto con React Bits, Bento Grid interactivo y optimizada para Nixpacks en Coolify.",
-      tags: ["React Bits", "Next.js 16", "Tailwind CSS", "Motion"],
-      repoUrl: "https://github.com",
-      liveUrl: "https://midominio.com",
+      id: "homelab-cloud",
+      title: "Homelab & Cloudflare Tunnels",
+      description: "Arquitectura autónoma de servidores orquestados en Proxmox, con Coolify para despliegues continuos y Cloudflare Zero Trust para tráfico seguro sin exponer puertos al exterior.",
+      tags: ["Proxmox VE", "Coolify", "Docker", "Cloudflare Tunnels", "Linux"],
+      liveUrl: "https://al3w0f.tech",
       featured: true,
-      badge: "Open Source",
+      badge: "Infraestructura",
+      metric: "24/7 Uptime",
+    },
+    {
+      id: "any-ps5",
+      title: "AnyPS5 Binary Utility",
+      description: "Herramienta experimental enfocada en análisis y portabilidad de ejecutables entre plataformas Linux y Windows con bajo nivel.",
+      tags: ["C", "C++", "Systems Programming", "Linux"],
+      repoUrl: "https://github.com/al3w0f205/AnyPS5",
+      featured: false,
+      badge: "Low-Level",
+    },
+    {
+      id: "portfolio-zenith",
+      title: "al3w0f.tech Portfolio & Hub",
+      description: "Sitio web oficial interactivo creado con componentes animados de React Bits, Bento Grid dinámico y auto-despliegue mediante Nixpacks en Coolify.",
+      tags: ["Next.js 16", "React Bits", "Tailwind CSS", "OGL Particles"],
+      repoUrl: "https://github.com/al3w0f205/portfolio-hub",
+      liveUrl: "https://al3w0f.tech",
+      featured: true,
+      badge: "En Vivo",
     },
   ],
 };

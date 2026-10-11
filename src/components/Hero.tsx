@@ -30,11 +30,20 @@ export default function Hero() {
       {/* Avatar / Profile Graphic */}
       <div className="mb-6 flex justify-center">
         <div className="relative group">
-          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500 to-cyan-500 opacity-30 blur-lg group-hover:opacity-60 transition duration-500" />
-          <div className="relative flex h-24 w-24 sm:h-28 sm:w-28 items-center justify-center rounded-2xl border border-white/10 bg-[#0d0f17] text-3xl sm:text-4xl font-mono font-bold text-white shadow-2xl">
-            <span className="bg-gradient-to-br from-white via-neutral-200 to-neutral-500 bg-clip-text text-transparent">
-              {siteConfig.name.slice(0, 2).toUpperCase()}
-            </span>
+          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500 opacity-40 blur-lg group-hover:opacity-75 transition duration-500" />
+          <div className="relative h-24 w-24 sm:h-28 sm:w-28 overflow-hidden rounded-2xl border border-white/15 bg-[#0d0f17] shadow-2xl">
+            {siteConfig.avatarUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={siteConfig.avatarUrl}
+                alt={siteConfig.name}
+                className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-3xl font-mono font-bold text-white">
+                {siteConfig.name.slice(0, 2).toUpperCase()}
+              </div>
+            )}
           </div>
         </div>
       </div>

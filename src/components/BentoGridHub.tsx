@@ -124,24 +124,24 @@ export default function BentoGridHub() {
                   Live
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-white">Infraestructura</h3>
+              <h3 className="text-lg font-semibold text-white">Homelab & Cloud</h3>
               <p className="text-sm text-neutral-400 mt-1">
-                Desplegado en servidor dedicado con Coolify y aislamiento Docker.
+                Servidores orquestados en Proxmox con Coolify y Cloudflare Tunnels.
               </p>
             </div>
 
             <div className="mt-6 space-y-2 font-mono text-xs text-neutral-400">
               <div className="flex justify-between py-1 border-b border-white/5">
-                <span className="text-neutral-500">PaaS Engine</span>
-                <span className="text-white font-medium">Coolify Nixpacks</span>
+                <span className="text-neutral-500">Virtualización</span>
+                <span className="text-white font-medium">Proxmox VE</span>
               </div>
               <div className="flex justify-between py-1 border-b border-white/5">
-                <span className="text-neutral-500">Uptime</span>
-                <span className="text-emerald-400 font-medium">99.99%</span>
+                <span className="text-neutral-500">PaaS Engine</span>
+                <span className="text-emerald-400 font-medium">Coolify Nixpacks</span>
               </div>
               <div className="flex justify-between py-1">
-                <span className="text-neutral-500">SSL / TLS</span>
-                <span className="text-cyan-400 font-medium">Automático Let&apos;s Encrypt</span>
+                <span className="text-neutral-500">Zero Trust</span>
+                <span className="text-cyan-400 font-medium">Cloudflare Tunnel</span>
               </div>
             </div>
           </SpotlightCard>
